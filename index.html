@@ -11,19 +11,26 @@
     <section id="scorekeeper">
         <div id="nowrap">
             <div id="home">
-                <div class="scorebox" id="homescore">0</div>
-                <button id="btn" data-team="home" data-value="1">+1</button>
-                <button id="btn" data-team="home" data-value="2">+2</button>
-                <button id="btn" data-team="home" data-value="3">+3</button>
+                <div id="homename">
+                    <div class="scorebox" id="homescore">0</div>
+                <p id="p1">&nbsp;Home&nbsp;</p></div>
+                <button onclick="Score('home', 1)">+1</button>
+                <button onclick="Score('home', 2)">+2</button>
+                <button onclick="Score('home', 3)">+3</button>
             </div>
             <div id="away">
-                <div class="scorebox" id="awayscore">0</div>
-                <button id="btn" data-team="away" data-value="1">+1</button>
-                <button id="btn" data-team="away" data-value="2">+2</button>
-                <button id="btn" data-team="away" data-value="3">+3</button>
+                <div id="awayname">
+                    <div class="scorebox" id="awayscore">0</div>
+                <p id="p2">&nbsp;Away&nbsp;</p></div>
+                <button onclick="Score('away', 1)">+1</button>
+                <button onclick="Score('away', 2)">+2</button>
+                <button onclick="Score('away', 3)">+3</button>
             </div>
         </div>
-        <button id="reset">Reset</button>
+        <ul>
+            <li><button id="reset" onclick="Reset()">Reset</button></li>
+            <li><button id="teamname" onclick="Team()">TeamNamen</button></li>
+        </ul>
     </section>
     <script src="./assets/js/main.js"></script>
 </body>

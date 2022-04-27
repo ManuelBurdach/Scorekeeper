@@ -2,14 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Orbitron&display=swap');
 
-#fonts{
+/* #fonts{
     font-family: 'Lato', sans-serif;
     font-family: 'Orbitron', sans-serif;
 }
 
 #colors{
     color: #2C2C2C, #FDF860, #000000, #FFFFFF, #97F5BB, #525DF4;
-}
+} */
 
 /* ========== GENERAL ========== */
 
@@ -24,19 +24,6 @@ html{
     font-family: 'Orbitron', sans-serif;
 }
 
-button{
-    font-family: 'Lato', sans-serif;
-    border-radius: 20px;
-    font-size: 37px;
-    line-height: 44px;
-    padding: 31px;
-    margin: 174px 10px;
-}
-
-#away, #home{
-    text-align: center;
-}
-
 /* ========== CLASSES ========== */
 
 .scorebox{
@@ -45,18 +32,10 @@ button{
     font-size: 150px;
     border-radius: 30px;
     padding: 114px 0;
-    margin-top: 100px;
+    margin: 37px;
 }
 
-#nowrap{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap:224px;
-    height: 820px;
-}
-
-/* ========== #Scorekeeper ========== */
+/* ========== #Scorekeeper & #nowrap ========== */
 
 #scorekeeper{
     background-color: #2C2C2C;
@@ -66,21 +45,72 @@ button{
     text-align: center;
 }
 
-/* ========== #home ========== */
-
-#home{
-    /* margin: 0 112px 0 192px; */
+#nowrap{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap:224px;
+    height: 720px;
 }
 
-/* ========== #away ========== */
+/* ========== #home & #away ========== */
 
-#away{
-    /* margin: 0 192px 0 112px; */
+#homename{
+    position: relative;
+    border: 5px solid #97F5BB;
+    border-radius: 40px;
+    margin: 123px 0 137px;
+}
+
+#awayname{
+    position: relative;
+    border: 5px solid #525DF4;
+    border-radius: 40px;
+    margin: 123px 0 137px;
+}
+
+p{
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    bottom: -24px;
+    font-size: 37px;
+    color: #FFFFFF;
+    background-color: #2C2C2C;
 }
 
 
-/* ========== #reset ========== */
 
-#reset{
-    margin: 0px;
+/* ========== BUTTONS ========== */
+
+button:not(#reset,#teamname){
+    font-family: 'Lato', sans-serif;
+    border-radius: 20px;
+    font-size: 37px;
+    padding: 31px;
+    margin: 0 10px;
+}
+
+#reset, #teamname{
+    width: 122px;
+    height: 39px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+ul{
+    margin-top: 40px;
+}
+
+li{
+    list-style: none;
+}
+
+#away button{
+    background-color: #525DF4;
+}
+
+#home button{
+    background-color: #97F5BB;
 }
