@@ -1,0 +1,86 @@
+/* ========== FONTS / COLORS ========== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Orbitron&display=swap');
+
+#fonts{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#colors{
+    color: #2C2C2C, #FDF860, #000000, #FFFFFF, #97F5BB, #525DF4;
+}
+
+/* ========== GENERAL ========== */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+button{
+    font-family: 'Lato', sans-serif;
+    border-radius: 20px;
+    font-size: 37px;
+    line-height: 44px;
+    padding: 31px;
+    margin: 174px 10px;
+}
+
+#away, #home{
+    text-align: center;
+}
+
+/* ========== CLASSES ========== */
+
+.scorebox{
+    background-color: #000000;
+    color: #FDF860;
+    font-size: 150px;
+    border-radius: 30px;
+    padding: 114px 0;
+    margin-top: 100px;
+}
+
+#nowrap{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap:224px;
+    height: 820px;
+}
+
+/* ========== #Scorekeeper ========== */
+
+#scorekeeper{
+    background-color: #2C2C2C;
+    width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ========== #home ========== */
+
+#home{
+    /* margin: 0 112px 0 192px; */
+}
+
+/* ========== #away ========== */
+
+#away{
+    /* margin: 0 192px 0 112px; */
+}
+
+
+/* ========== #reset ========== */
+
+#reset{
+    margin: 0px;
+}

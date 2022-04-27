@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <section id="scorekeeper">
+        <div id="nowrap">
+            <div id="home">
+                <div class="scorebox" id="homescore">0</div>
+                <button id="btn" data-team="home" data-value="1">+1</button>
+                <button id="btn" data-team="home" data-value="2">+2</button>
+                <button id="btn" data-team="home" data-value="3">+3</button>
+            </div>
+            <div id="away">
+                <div class="scorebox" id="awayscore">0</div>
+                <button id="btn" data-team="away" data-value="1">+1</button>
+                <button id="btn" data-team="away" data-value="2">+2</button>
+                <button id="btn" data-team="away" data-value="3">+3</button>
+            </div>
+        </div>
+        <button id="reset">Reset</button>
+    </section>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
